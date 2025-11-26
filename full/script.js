@@ -66,7 +66,7 @@ function selectId(id) {
 // 데이터 렌더링
 function renderData(data) {
     // 헤더 업데이트
-    document.getElementById('input-header').textContent = data.input;
+    document.getElementById('input-header').innerHTML = "Client's note:<br>" + data.input;
     
     // 각 컬럼 렌더링
     renderChat('chat-a', data.A);
