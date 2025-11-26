@@ -18,7 +18,7 @@ body {
 
 /* 좌측 사이드바 */
 .sidebar {
-    width: 150px;
+    width: 130px;
     background-color: #2c3e50;
     color: white;
     overflow-y: auto;
@@ -28,7 +28,7 @@ body {
 .sidebar-header {
     padding: 20px;
     background-color: #1a252f;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     border-bottom: 1px solid #34495e;
 }
@@ -134,10 +134,17 @@ body {
 
 .message.therapist {
     justify-content: flex-end;
+    text-align: right;
+}
+
+.message.therapist > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .message-bubble {
-    max-width: 70%;
+    max-width: 85%;
     padding: 12px 16px;
     border-radius: 18px;
     word-wrap: break-word;

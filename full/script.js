@@ -91,13 +91,13 @@ function renderChat(containerId, messages) {
         
         const roleLabel = message.role === 'therapist' ? 'Therapist' : 'Client';
         
-        messageDiv.innerHTML = `
-            <div>
-                <div class="message-role">${roleLabel}</div>
-                <div class="message-bubble">${escapeHtml(message.content)}</div>
-            </div>
+        const wrapper = document.createElement('div');
+        wrapper.innerHTML = `
+            <div class="message-role">${roleLabel}</div>
+            <div class="message-bubble">${escapeHtml(message.content)}</div>
         `;
         
+        messageDiv.appendChild(wrapper);
         container.appendChild(messageDiv);
     });
     
