@@ -4,7 +4,7 @@ let currentId = null;
 // JSONL 파일 로드
 async function loadData() {
     try {
-        const response = await fetch('./test_data_assis_only_web_final.jsonl');
+        const response = await fetch('./test_data_assis_only_web_final_20.jsonl');
         const text = await response.text();
         const lines = text.trim().split('\n');
         
